@@ -2,9 +2,10 @@
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI_append = " file://fix-eglfs_kms_egldevice-build-error.patch \
-                   file://0001-evdevtouch-Avoid-crashing-on-exit.patch \
-"
+# no need to apply these two patc now. they are fixed in qt5.12
+#SRC_URI_append = " file://fix-eglfs_kms_egldevice-build-error.patch \
+#                   file://0001-evdevtouch-Avoid-crashing-on-exit.patch \
+#"
 
 HAS_X11 = "${@bb.utils.contains('DISTRO_FEATURES', 'x11', 1, 0, d)}"
 
