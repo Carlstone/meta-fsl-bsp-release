@@ -1,0 +1,11 @@
+--- gst-plugins-bad-1.8.1/ext/qt/Makefile.am	2019-02-19 10:25:34.144997834 +0800
++++ gst-plugins-bad-1.8.1b/ext/qt/Makefile.am	2019-02-19 14:50:40.362126398 +0800
+@@ -39,7 +39,7 @@
+ 	$(GST_BASE_CFLAGS) \
+ 	$(GST_PLUGINS_BASE_CFLAGS) \
+ 	$(QT_CFLAGS) \
+-	$(GL_CFLAGS)
++	$(GL_CFLAGS) -std=c++11
+ 
+ libgstqmlgl_la_LIBADD = \
+ 	$(GST_BASE_LIBS) \
