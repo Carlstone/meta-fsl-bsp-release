@@ -3,7 +3,7 @@ meta-fsl-bsp-release
 
 steps:
 
-$repo init -u https://github.com/Carlstone/meta-fsl-bsp-release.git -b imx-4.1-krogoth
+$repo init -u https://github.com/Carlstone/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth
 
 $repo sync
 
